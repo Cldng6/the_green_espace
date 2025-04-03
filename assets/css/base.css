@@ -1,6 +1,24 @@
 :root {
-    --background-color: #4CAF50;
-    ---color: #f1f1f1;
+    --color-btn-ttle: #4CAF50;
+    --principal-color: #F5F5DC;
+    --color: #f1f1f1;
     /* --titre-h: font-family: Palayfair Display; */
 
+}
+
+body {
+    background-color: var(--principal-color);
+    color: var(--color-btn-ttle);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+nav ul {
+    flex-direction: row;
+    display: flex;
+    gap: 20px;
 }

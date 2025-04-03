@@ -1,0 +1,8 @@
+a {
+    color: var(--color-btn-ttle);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--color);
+    text-decoration: underline;
+}
