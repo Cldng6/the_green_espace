@@ -38,9 +38,20 @@ nav ul {
 
 
 
-
-
-
+main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    gap: 10px;
+}
+main img {
+    width: 100%;
+    background-color: rgba(0, 17, 255, 0.192);
+    border-radius: 2%;
+    object-fit: cover;
+}
 
 
 .footer-container {
@@ -61,10 +72,12 @@ nav ul {
 }
 .footer-section img {
     width: 40px;
-    border-radius: 50%;
+    height: 40px;
+    border-radius: 20%;
     object-fit: cover;
 }
 .footer-section h3 {
+    padding: 15px 0;
     font-size: 1.5rem;
     color: var(--color-btn-ttle);
     font-weight: 600;
@@ -75,4 +88,10 @@ nav ul {
     color: var(--color-btn-ttle);
     font-weight: 400;
     text-align: center;
+}
+
+.footer-section a {
+    color: var(--color-btn-ttle);
+    padding: 0px 5px;
+    text-decoration: none;
 }
