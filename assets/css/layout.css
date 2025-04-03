@@ -4,5 +4,21 @@ a {
 }
 a:hover {
     /* color: var(--color); */
-    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    transform: scale(1.2);
+    transition: all 3.3s ease;
+    bottom: auto;
+}
+
+.logo {
+    width: 55px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.logo:hover {
+    background-color: #ffffff11;
+    box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.342);
+    transform: scale(1.6);
+    border-radius: 100%;
+    transition: all 3.3s ease;
 }
