@@ -59,7 +59,7 @@ h1 {
     border-radius: 20%;
     object-fit: cover;
 }
-.footer-section h3 {
+.footer-section h2 {
     padding: 15px 0;
     font-size: 1.5rem;
     color: var(--color-btn-ttle);
