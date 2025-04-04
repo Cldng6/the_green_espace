@@ -18,14 +18,16 @@ a {
     color: var(--color-btn-ttle);
     text-decoration: none;
 }
+
 a:hover {
-    /* color: var(--color); */
-    color: rgb(0, 0, 0);
     transform: scale(1.2);
     transition: all 3.3s ease;
     bottom: auto;
-    background-color: transparent;
-    box-shadow: 1px 3px 5px rgb(144, 194, 196);
+    color: black;
+    text-shadow: 1px 1px 2px #ff0000;
+    border-radius: 10px;
+    text-decoration: underline solid black;
+    text-decoration-thickness: 2px;
 }
 
 .logo {
