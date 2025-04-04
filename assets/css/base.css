@@ -24,6 +24,8 @@ a:hover {
     transform: scale(1.2);
     transition: all 3.3s ease;
     bottom: auto;
+    background-color: transparent;
+    box-shadow: 1px 3px 5px rgb(144, 194, 196);
 }
 
 .logo {
@@ -32,7 +34,6 @@ a:hover {
     object-fit: cover;
 }
 .logo:hover {
-    background-color: #ffffff11;
     box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.342);
     transform: scale(1.6);
     border-radius: 100%;
