@@ -1,24 +1,105 @@
-a {
-    color: var(--color-btn-ttle);
-    text-decoration: none;
+/* titre, body, paragraphe, listes, liens(a), boutons, cartes */
+
+.header-container {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10px 40px 40px;
+    align-items: center;
+    box-shadow: 1px 3px 5px rgba(6, 105, 20, 0.1);
+    background:
+    linear-gradient( transparent, rgba(0, 0, 0, 0.185))
 }
-a:hover {
-    /* color: var(--color); */
-    color: rgb(0, 0, 0);
-    transform: scale(1.2);
-    transition: all 3.3s ease;
-    bottom: auto;
+.header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    gap: 10px;
+}
+nav ul {
+    box-sizing: border-box;
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
 }
 
-.logo {
-    width: 55px;
-    border-radius: 100%;
+
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    gap: 10px;
+}
+main img {
+    width: 100%;
+    background-color: rgba(0, 17, 255, 0.192);
+    border-radius: 2%;
     object-fit: cover;
 }
-.logo:hover {
-    background-color: #ffffff11;
-    box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.342);
-    transform: scale(1.6);
-    border-radius: 100%;
-    transition: all 3.3s ease;
+
+
+
+
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 2px -2px 5px 2px rgba(6, 105, 20, 0.1);
+}
+.footer-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+.footer-section img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+.footer-section h3 {
+    padding: 15px 0;
+    font-size: 1.5rem;
+    color: var(--color-btn-ttle);
+    font-weight: 600;
+    text-align: center;
+}
+.footer-section p {
+    font-size: 1rem;
+    color: var(--color-btn-ttle);
+    font-weight: 400;
+    text-align: center;
+}
+
+.footer-section a {
+    color: var(--color-btn-ttle);
+    padding: 0px 5px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    body {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    .footer-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
 }
