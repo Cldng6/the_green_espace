@@ -4,7 +4,7 @@
     --color-btn-ttle: #4CAF50;
     --principal-color: #F5F5DC;
     --color: #f1f1f1;
-    /* --titre-h: font-family: Palayfair Display; */
+    /* --titre-h: font-family: Playfair Display; */
 
 }
 
@@ -12,6 +12,14 @@ body {
     background-color: var(--principal-color);
     color: var(--color-btn-ttle);
     box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+}
+
+p, a, span {
+    font-family: "Poppins", sans-serif;
 }
 
 a {
