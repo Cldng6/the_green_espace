@@ -1,5 +1,10 @@
 /* mise en forme des section de la pages + le responsive de la page */
+body {
+    max-width: 100%;
+    box-sizing: border-box;
+}
 .main-container {
+    box-sizing: border-box;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -12,6 +17,107 @@
     justify-content: space-around;
 }
 .section-container img {
+    
+    filter:  brightness(80%) blur(2.5px) grayscale(10%);
+    border-radius: 1px;
+    height: 59vh;
     width: 100%;
-    border-radius: 5px;
+    object-fit: cover;
+}
+
+.main-container h2 {
+    position: absolute;
+    font-size: 1.9rem;
+    color: #fff;
+    top: 35%;
+    left: 25%;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.7);
+    font-family: "Bad Script", cursive;
+}
+.section-container p {
+    position: absolute;
+    display: inline;
+    font-size: 1.2rem;
+    color: #fff;
+    left: 25%;
+    width: 55%;
+}
+.section-container button {
+    position: absolute;
+    top: 58%;
+    left: 25%;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    color: #fff;
+    /* text-decoration: none; */
+    transition: all 2s ease;
+}
+.section-container button:hover {
+    background-color: #4583a0;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.section-hebergements {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.section-hebergements h2 {
+    
+    position: initial;
+    text-align: center;
+    font-size: 2rem;
+    color: #4CAF50;
+    font-weight: 700;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-gap: 10px;
+  }
+  
+  .item {
+    color: aqua;
+    align-items: center;
+    display: grid;
+    /* grid-template-rows: max-content 200px 1fr; */
+    
+  }
+  
+  .item img {
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+    transition: all 2s ease;
+  }
+
+.container button {
+    padding: 10px;
+    background-color: #4CAF50;
+    border-radius: 0px 50px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 2s ease;
+}
+
+.container button:hover {
+    background-color: #4583a0;
+    color: black;
+    border-radius: 50px 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

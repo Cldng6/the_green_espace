@@ -34,6 +34,7 @@ h1 {
     box-sizing: border-box;
     flex-direction: row;
     display: flex;
+    font-weight: 700;
     gap: 10px;
 }
 .footer-container {
@@ -74,7 +75,6 @@ h1 {
 }
 
 .footer-section a {
-    color: var(--color-btn-ttle);
     padding: 0px 5px;
     text-decoration: none;
 }
@@ -85,7 +85,7 @@ h1 {
     display: none;
 }
 
-.header-button  button{
+.header-button  button {
     background-color: transparent;
     color: rgb(0, 0, 0);
     font-size: 20px;
