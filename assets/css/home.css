@@ -177,34 +177,44 @@ body {
 }
 
 /* styles de section avis */
-.section-avis {
+.section-avis-container {
     width: 100%;
     justify-content: space-between;
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .avis-container {
     box-sizing: border-box;
     width: 100%;
-    margin: 0 auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    grid-gap: 10px;
-
+    align-items: center;
+    flex-direction: column;
 }
   
-  .avis-item {
+.avis-column {
+    box-sizing: border-box;
     width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avis-item {
+    width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 10px 0;
-    margin: 0 10px;
-    text-align: center;
-    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px ;
+    gap : 10px 0;
+    background: linear-gradient( transparent, rgba(0, 0, 0, 0.377));
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
 }
   
   .avis-item img {
@@ -214,7 +224,7 @@ body {
     height: 100px;
     transition: all 2s ease;
   }
-  .section-avis h2 {
+  .section-avis-container h2 {
     position: initial;
     text-align: center;
     font-size: 2rem;
@@ -222,3 +232,23 @@ body {
     font-weight: 700; 
     margin: 10px 0;
   }
+
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.5s ease;
+  
+}
+.stars span {
+    color: #000000;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+}
+.stars span:hover {
+    color: #002fff;
+}
+.stars span:hover ~ span {
+    color: #ccc;
+}
