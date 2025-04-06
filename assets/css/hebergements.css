@@ -1,5 +1,45 @@
 
 /* Contenaire main*/
-main{
-background-color: aquamarine;
+.main-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 1200px;
+}
+
+.section-hebergements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.nos-hebergements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: column;
+    margin: 0 auto;
+}
+
+.nos-hebergements img {
+    max-width: 100%;
+    width: 450px;
+    height: 350px;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hebergement-details {
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 10px;
 }

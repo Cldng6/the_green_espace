@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/layout.css">
     <link rel="stylesheet" href="./assets/css/hebergements.css">
-    <title>Hebergements</title>
+    <title>Hébergements</title>
 </head>
 <body>
     <header class="header-container">
@@ -41,15 +41,107 @@
         <div class="header-button">
             <button>&#9776;</button>
         </div>
-    </header><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat impedit at ad nulla placeat eius rerum animi illo libero, accusantium officia laboriosam asperiores voluptatem minima iusto optio quibusdam explicabo? Deserunt!</p>
+    </header>
     <main class="main-container">
-
-
-            <img src="./assets/images/home/images1.png" alt="">
-            <h2>Reconnectez-vous à la nature</h2>
-            <p>The Green Espace est une jeune entreprise spécialisée dans l'ecotourisme, née de la passion commune de deux amis la nature, le confort minimaliste et les modes de vie durables.</p>
-            <button onclick="window.location.href='./a-propos.html'">À Propos</button>
-
+        <!-- Section de filtrage -->
+        <section class="section-container">
+            <h2>Trouvez votre hébergement idéal</h2>
+            <div class="filtrage-container">
+                <div class="filtrage-iteme">
+                    <form action="./hebergements.html">
+                        <fieldset >
+                            <legend>Animaux acceptés</legend>
+                            <div>
+                                <input type="radio" id="non" name="non" value="non" checked>
+                                <label for="non">Non</label><br >
+                            </div>
+                            <div>
+                                <input type="radio" name="animal" value="animal" id="animal" checked>
+                                <label for="animal">J'ai un animal</label>
+                            </div>
+                        </fieldset>
+                        <fieldset >
+                            <legend>Choisissez un hébergement:</legend>
+                                <select name="hebergement">
+                                    <option>Choisissez</option>
+                                    <option value="economique">économique</option>
+                                    <option value="Standard">Standard</option>
+                                    <option value="Bas-de-gamme">Bas de gamme</option>
+                                    <option value="entree-de-gamme">Entrée de gamme</option>
+                                    <option value="tarif-abordable">Tarif abordable</option>
+                                    <option value="haut-de-gamme">Haut de gamme</option>
+                                    <option value="premium">Premium</option>
+                                    <option value="luxe">Luxe</option>
+                                    <option value="confort-superieur">Confort supérieur</option>
+                                    <option value="tarif-eleve">Tarif élevé</option>
+                                </select>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Confort</legend>
+                            <input type="checkbox" name="piscine" id="piscine" value="piscine" checked>
+                            <label for="piscine">Piscine</label>
+                            <input type="checkbox" name="cuisine" value="cuisine" id="cuisine" checked>
+                            <label for="cuisine">Cuisine</label>
+                        </fieldset>
+                        <input type="submit" value="Envoyer">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Section des hébergements -->
+        <section class="section-hebergements">
+            <div class="nos-hebergements">
+                <img src="./assets/images/hebergements/home-mer.jpg" alt="">
+                <div class="hebergement-details">
+                                    <h2>La mer en face</h2>
+                <p>La mer en face est un hébergement de luxe situé à Villeneuve sur Lot, offrant une vue imprenable sur la mer. 
+                    Avec ses équipements modernes et son ambiance relaxante, c'est l'endroit idéal pour se ressourcer.</p>
+                <p>Prix par nuit :
+                    <span class="prix">150€</span>
+                </p>
+                <button onclick="window.location.href='./hebergement-details.html'">En savoir plus</button>
+                </div>
+            </div>
+            <div class="nos-hebergements">
+                <img src="./assets/images/hebergements/entre-les-des-arbres.jpg" alt="">
+                <div class="hebergement-details">
+                <h2>Entre les des arbres</h2>
+                <p>
+                    Entre les arbres est un hébergement de luxe situé à Villeneuve sur Lot, offrant une vue imprenable sur la mer. 
+                    Avec ses équipements modernes et son ambiance relaxante, c'est l'endroit idéal pour se ressourcer.</p>
+                <p>Prix par nuit :
+                    <span class="prix">289€</span>
+                </p>
+                <button onclick="window.location.href='./hebergement-details.html'">En savoir plus</button>
+                </div>
+            </div>
+            <div class="nos-hebergements">
+                <img src="./assets/images/hebergements/place-obscur.jpg" alt="">
+                <div class="hebergement-details">
+                <h2>Place Obscur</h2>
+                <p>
+                    Place Obscur est un hébergement de luxe situé à Villeneuve sur Lot, offrant une vue imprenable sur la mer. 
+                    Avec ses équipements modernes et son ambiance relaxante, c'est l'endroit idéal pour se ressourcer.</p>
+                <p>Prix par nuit :
+                    <span class="prix">150€</span>
+                </p>
+                <button onclick="window.location.href='./hebergement-details.html'">En savoir plus</button>
+                </div>
+            </div>
+            <div class="nos-hebergements">
+                <img src="./assets/images/hebergements/ile-des-bateaux.jpg" alt="">
+                <div class="hebergement-details">
+                <h2>Ile des Bateaux</h2>
+                <p>
+                    Ile des Bateaux est un hébergement de luxe situé à Villeneuve sur Lot, offrant une vue imprenable sur la mer. 
+                    Avec ses équipements modernes et son ambiance relaxante, c'est l'endroit idéal pour se ressourcer.</p>
+                <p>Prix par nuit :
+                    <span class="prix">200€</span>
+                </p>
+                <button onclick="window.location.href='./hebergement-details.html'">En savoir plus</button>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer-container">
         <section class="footer-section">
