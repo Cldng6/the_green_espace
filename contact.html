@@ -43,8 +43,37 @@
         </div>
     </header>
     <main>
-        <section>
-            <img src="./assets/images/Section.sv" alt="">
+        <section class="section-container">
+            <div class="form-container">
+                <form action="" method="post" class="form-container">
+                    <fieldset>
+                        <legend>Contactez-nous</legend>
+                        <p>Nous sommes là pour vous aider. Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+                    </fieldset>
+                    <fieldset>
+                        <label for="name" class="label">Nom</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="email" class="label">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="message" class="label">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Votre message" required></textarea>
+                    </fieldset>
+                    <button type="submit" class="submit-button">Envoyer</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Où nous trouver</h2>
+                <p>Adresse : 00 Villeneuve sur lot - Paris</p>
+                <p>Téléphone : +33 0 00 00 00</p>
+            </div>
+        </section>
+        <section class="map-container">
+            <h2>Notre emplacement</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5701.437651591642!2d0.7215149408776529!3d44.39789330406934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ab0787fb789555%3A0xc611e7a61907aea8!2sSud%20Management%20Villeneuve-sur-Lot!5e0!3m2!1sfr!2sfr!4v1743847483034!5m2!1sfr!2sfr"  allowfullscreen  loading="lazy"  referrerpolicy="no-referrer-when-downgrade"  name="localisation" title="Carte Google Maps montrant l'emplacement de Sud Management à Villeneuve-sur-Lot"></iframe>
         </section>
     </main>
     <footer class="footer-container">
