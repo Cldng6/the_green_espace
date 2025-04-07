@@ -1,13 +1,67 @@
+.main-container {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 10px;
+}
 .section-container {
+    box-sizing: border-box;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
 }
-.form-container {
+.contact-form-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.form {
     width: 50%;
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    font-size: large;
+    background-color: transparent;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 6px 4px 10px 8px rgba(54, 54, 54, 0.918);
+}
+
+.form input,
+.form textarea {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact-info {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    gap: 10px;
+    font-size: large;
     align-items: center;
+    padding: 10px;
+}
+
+.contact-map {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.contact-map iframe {
+    width: 100%;
+    border-radius: 30px 9px;
+    height: 300px;
+    box-shadow: 6px 4px 10px 8px rgba(54, 54, 54, 0.918);
 }
