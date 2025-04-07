@@ -1,0 +1,22 @@
+/* Desktop */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    body {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+}
+/* tablette */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+}
+/* Portable */
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    body {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+}
+

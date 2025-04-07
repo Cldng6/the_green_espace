@@ -11,6 +11,7 @@ body {
     flex-direction: column;
 }
 .section-container {
+    position: relative;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -20,37 +21,50 @@ body {
 .section-container img {
     filter:  brightness(80%) blur(2.5px) grayscale(10%);
     border-radius: 1px;
-    height: 59vh;
+    height: 450px;
     width: 100%;
     object-fit: cover;
+    object-position: center 80%;
 }
-.main-container h2 {
+.section-intro {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    /* width: 100%; */
+    /* height: 100%; */
+    background: linear-gradient( transparent, rgba(0, 0, 0, 0.477));
+}
+.section-intro h2 {
+    /* position: absolute; */
     font-size: 1.9rem;
-    color: #fff;
-    top: 35%;
-    left: 25%;
+    color: #692020;
+    /* top: 35%; */
+    /* left: 25%; */
     text-transform: uppercase;
     font-weight: 700;
     text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.7);
     font-family: "Bad Script", cursive;
 }
-.section-container p {
-    position: absolute;
-    display: inline;
+.section-intro p {
+    /* position: absolute; */
+    /* display: inline; */
     font-size: 1.2rem;
+    margin: 10px 0 0 0;
     color: #fff;
-    left: 25%;
+    /* left: 25%; */
     width: 55%;
 }
-.section-container button {
-    position: absolute;
-    top: 58%;
-    left: 25%;
-    padding: 10px 20px;
+.section-intro button {
+    /* position: absolute; */
+    /* top: 58%; */
+    /* left: 25%; */
+    padding: 5px 50px;
     background-color: #4CAF50;
     border-radius: 10px;
     color: #fff;
+    margin: 20px 0 0 0;
     /* text-decoration: none; */
     transition: all 2s ease;
 }
