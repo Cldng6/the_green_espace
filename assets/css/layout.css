@@ -21,76 +21,96 @@ body {
     background:linear-gradient( transparent, rgba(0, 0, 0, 0.377))
 }
 
-.header-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header-content {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    gap: 10px;
-}
-.nav-container ul {
-    box-sizing: border-box;
-    flex-direction: row;
-    display: flex;
-    font-weight: 700;
-    gap: 10px;
-}
 .footer-container {
+    background-color: var(--font-principal-color);
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
-    box-shadow: 2px -2px 5px 2px rgba(6, 105, 20, 0.1);
-    background:linear-gradient( transparent, rgba(0, 0, 0, 0.377))
+    flex-direction: column;
 }
 .footer-section {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
     align-items: center;
-    gap: 10px;
-    flex-direction: column;
+    padding: 20px 10px 20px 40px;
+    flex-direction: row;
 }
-.footer-section img {
-    max-width: 0;
+
+.footer-item {
+    width: 20%;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px;
+}
+.logo {
+    max-width: 30%;
     /* width: 40px;
     height: 40px; */
     border-radius: 20%;
     object-fit: cover;
 }
-.footer-section h2 {
-    padding: 15px 0;
-    font-size: 1.5rem;
-    color: var(--color-btn-ttle);
-    font-weight: 600;
-    text-align: center;
+
+.footer-item img {
+    max-width: 50%;
+    border-radius: 20%;
+    object-fit: cover;
+}
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.social-media img {
+    max-width: 50%;
+    /* border-radius: 50%; */
+    object-fit: cover;
+
 }
 
 /* style button hambuger */
-.header-button {
+.button-humburger {
     display: none;
-    font-size: 30px;
 }
 
-.header-button  button {
-    background-color: transparent;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
+.button-humburger  a {
+    font-size: 40px;
+    padding: 0 10px 0 0;
+    margin: 0;
 }
 
-.footer-logo img {
-    padding: 2px 0px 0px 0px;
-    width: 65px;
-    height: 65px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Desktop media query*/
 @media screen and (max-width: 1440px) {
@@ -128,7 +148,7 @@ body {
         width: 100%;
     }
     /* style button hambuger */
-    .header-button {
+    .button-humburger {
         display: inline;
         font-size: 30px;
     }
