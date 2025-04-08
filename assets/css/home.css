@@ -29,7 +29,7 @@ body {
 .section-intro {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
     padding: 15px;
     /* width: 100%; */
@@ -39,36 +39,40 @@ body {
 .section-intro h2 {
     /* position: absolute; */
     font-size: 1.9rem;
-    color: #692020;
-    /* top: 35%; */
-    /* left: 25%; */
+    color: #ffffff;
     text-transform: uppercase;
     font-weight: 700;
-    text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 10px 20px rgba(0, 0, 0, 0.7);
     font-family: "Bad Script", cursive;
 }
 .section-intro p {
     /* position: absolute; */
     /* display: inline; */
     font-size: 1.2rem;
-    margin: 10px 0 0 0;
+    margin: 1px 0 0 0;
     color: #fff;
     /* left: 25%; */
-    width: 55%;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.7);
 }
-.section-intro button {
-    /* position: absolute; */
-    /* top: 58%; */
-    /* left: 25%; */
-    padding: 5px 50px;
-    background-color: #4CAF50;
+.button-container {
+    padding: 25px 0 0 0;
+
+}
+
+.button-container a {
+
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    background-color: #000000;
     border-radius: 10px;
     color: #fff;
     margin: 20px 0 0 0;
     /* text-decoration: none; */
     transition: all 2s ease;
 }
-.section-container button:hover {
+.button-container a:hover {
     background-color: #4583a0;
     color: black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -145,7 +149,6 @@ body {
     justify-content: space-around;
     flex-direction: column;
     padding: 20px 0;
-    background: linear-gradient( transparent, rgba(0, 0, 0, 0.377));
 }
 .section-contact {
     width: 95%;
@@ -154,7 +157,7 @@ body {
     align-items: center;
     justify-content: space-around;
     gap: 10px;
-    border: 1px solid #323d33;
+    border: 0px solid #323d33;
 }
 
 .item-contact {
@@ -265,4 +268,62 @@ body {
 }
 .stars span:hover ~ span {
     color: #ccc;
+}
+
+/*Desktop media query*/
+@media screen and (max-width: 1440px) {
+    /* styles */
+    .section-intro  {
+        margin: 0 px;
+    }
+}
+
+/* Tablette media query*/
+@media screen and (max-width: 1024px) {
+    /* styles */
+    .section-intro  {
+        margin: 0 -50px;
+
+        transform: translate(-40%, -50%);
+
+    }
+}
+
+/* Portable media query*/
+@media screen and (max-width: 768px) {
+    /* styles */        
+    .section-intro  {
+        margin: 0 -60px;
+        position: absolute;
+        top: 50%;
+        left: 80% 20;
+        transform: translate(-32%, -50%);
+        padding: 15px;
+
+
+    }
+    .section-intro h2 {
+        /* position: absolute; */
+        font-size: 1.2rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-shadow: 1px 10px 20px rgba(0, 0, 0, 0.7);
+        font-family: "Bad Script", cursive;
+    }
+    .section-intro p {
+        /* position: absolute; */
+        /* display: inline; */
+        font-size: 0.9rem;
+        margin: 1px 0 0 0;
+        color: #fff;
+        /* left: 25%; */
+        width: 100%;
+        text-align: center;
+        text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.7);
+    }
+    .button-container {
+        padding: 25px 0 0 0;
+    
+    }
 }
