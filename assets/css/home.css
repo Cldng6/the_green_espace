@@ -214,8 +214,8 @@ body {
 .avis-column {
     box-sizing: border-box;
     width: 100%;
-    margin: 0 auto;
-    padding: 10px;
+    margin: 10 auto;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -276,8 +276,29 @@ body {
     .section-intro  {
         margin: 0 px;
     }
-}
+    .section-avis-container {
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    }
 
+    .avis-column {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .avis-item {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
 /* Tablette media query*/
 @media screen and (max-width: 1024px) {
     /* styles */
@@ -286,6 +307,27 @@ body {
 
         transform: translate(-40%, -50%);
 
+    }
+    .section-avis-container {
+        width: 90%;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .avis-column {
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-around;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .avis-item {
+        width: 40%;
+        padding: 10px 5px;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
     }
 }
 
@@ -324,6 +366,29 @@ body {
     }
     .button-container {
         padding: 25px 0 0 0;
-    
     }
+    .section-avis-container {
+        background-color: #15ff00;
+    width: 100%;
+    flex-direction: column;
+    }
+    .avis-container {
+        /* background-color: aliceblue; */
+        width: 100%;
+        display: flex;
+    }
+    .avis-column {
+        /* background-color: aliceblue; */
+        width: 100%;
+        /* margin: 0 auto; */
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .avis-item {
+        width: 90%;
+        padding: 10px 5px;
+        margin: 10px 0;
+    }
+
 }
